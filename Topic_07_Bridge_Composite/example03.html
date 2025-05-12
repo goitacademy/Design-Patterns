@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Composition Pattern Example</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Test Page</h1>
+        <p>This is a <a href="#">test link</a> inside a paragraph.</p>
+        <div>
+            <a href="#">Another link</a>
+            <span>Some text with <a href="#">one more link</a></span>
+        </div>
+    </div>
+    <script>
+        // Функція для обробки DOM-дерева
+            function processDOM(element, callback) {
+                // Обробляємо поточний елемент
+                callback(element);
+
+                // Рекурсивно обробляємо дочірні елементи
+                Array.from(element.children).forEach(child => {
+                    processDOM(child, callback);
+                });
+            }
+
+            // Функція, яка виконується після завантаження DOM
+            document.addEventListener('DOMContentLoaded', () => {
+                // Знаходимо всі посилання у документі
+                const links = [];
+
+                processDOM(document.body, (element) => {
+                    if (element.tagName === 'A') {
+                        links.push(element);
+                    }
+                });
+
+                console.log(`Знайдено ${links.length} посилань на сторінці`);
+            });
+
+    </script>
+</body>
+</html> 

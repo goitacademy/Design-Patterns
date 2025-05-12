@@ -1,0 +1,20 @@
+{
+  "name": "topic_06_decorator_proxy",
+  "version": "1.0.0",
+  "main": "example01.js",
+  "scripts": {
+    "build": "tsc",
+    "fix-unicode": "node fixUnicode.js .",
+    "build:pretty": "npm run build && npm run fix-unicode",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.14.1"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.2.2"
+  }
+}

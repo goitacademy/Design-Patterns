@@ -1,0 +1,16 @@
+{
+    "name": "typescript-patterns",
+    "version": "1.0.0",
+    "description": "TypeScript patterns examples",
+    "scripts": {
+        "build": "npx tsc",
+        "start": "npx ts-node example01.ts",
+        "dev": "npx ts-node-dev --respawn example01.ts"
+    },
+    "devDependencies": {
+        "typescript": "^5.3.3",
+        "ts-node": "^10.9.2",
+        "ts-node-dev": "^2.0.0",
+        "@types/node": "^22.0.0"
+    }
+}

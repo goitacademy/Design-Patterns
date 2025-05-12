@@ -1,0 +1,21 @@
+# Приклади патернів Decorator, Proxy
+
+- `example01.ts` — Базовий клас для рендеру тексту (основа для декорування)
+- `example02.ts` — Структурний декоратор (class decorator), обгортання сповіщень: `LoggerNotifier`, `EncryptedNotifier`
+- `example03.ts` — Декоратор-клас (class decorator) для додавання поля `createdAt` (`WithTimestamp`)
+- `example04.ts` — Декоратор-клас (class decorator) для реєстрації класів у глобальному реєстрі `Register`
+- `example05.ts` — Декоратор-клас (class decorator) для додавання ролі користувача `WithRole`, динамічно додає поле `userRole`
+- `example06.ts` — Декоратор-метод (method decorator, ECMAScript/TypeScript 5.x+), логування викликів
+- `example07.ts` — Декоратор-метод (method decorator), вимірювання часу виконання
+- `example08.ts` — Декоратор-геттер (getter decorator), логування доступу до властивостей
+- `example09.ts` — Декоратор-властивість (property decorator), додає поле до списку експортованих (WeakMap, збір імен полів)
+- `example10.ts` — Декоратор-метод (method decorator), перевірка прав доступу
+- `example11.ts` — Комбінування декораторів (method decorator): логування та вимірювання часу
+- `example12.ts` — Класичний Proxy (ручна реалізація), відкладене завантаження PDF-документа `PdfDocumentProxy`
+- `example13.ts` — Proxy (ручна реалізація), контроль доступу до сервісу
+- `example14.ts` — Proxy (ES6 Proxy), логування доступу до полів, захист секретних даних
+- `example15.ts` — Proxy (ES6 Proxy), контроль доступу до методів
+- `example16.ts` — Proxy (ES6 Proxy), логування викликів методів сервісу
+- `example17.ts` — Proxy (ES6 Proxy), контроль доступу до методів адміністративної панелі
+- `example18.ts` — Proxy (ES6 Proxy), кешування результатів асинхронного сервісу (курси валют)
+- `example19.ts` — Proxy (ES6 Proxy), логування всіх викликів методів математичного сервісу

@@ -1,0 +1,11 @@
+<report>
+  <title>Monthly</title>
+  <items>
+    <name>Item A</name>
+    <value>42</value>
+  </items>
+  <items>
+    <name>Item B</name>
+    <value>15</value>
+  </items>
+</report>
